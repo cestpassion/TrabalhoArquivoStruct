@@ -1,27 +1,22 @@
 /* Uma empresa deseja fazer o cadastro dos colaboradores. Os dados que deverão ser persistidos (arquivo) são: código, nome, email e salário.
 
-O seu programa deve permitir as seguintes funcionalidades:
+O programa permite as seguintes funcionalidades:
 
 1) Cadastrar colaborador
-2) Consultar colaborador por código e nome
-3) Alterar o salário de um colaborador;
-4) Remover um colaborador
-5) Imprimir a soma de todos os salários
-
+2) Consultar colaborador por nome
+3) Consultar colaborador por codigo
+4) Alterar salario
+5) Remover colaborador
+6) Mostrar soma dos salarios
+7) Mostrar todos os colaboradores
+0) Sair
 */
 
-
-
-
-/*ERROS:
+/*ERROS a serem consertados:
 
 - As vezes a função cadastrarColab não funciona quando preenchida com dados extremamente especificos
 - Na função removColab ao entrar no else, as strings nunca mais serão validas
 */
-
-
-
-
 
 #include <stdio.h>
 #include <stdlib.h>
