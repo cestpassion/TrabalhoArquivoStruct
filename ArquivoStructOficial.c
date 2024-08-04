@@ -25,6 +25,8 @@ O programa permite as seguintes funcionalidades:
 
 #define maxcolab 100
 
+//Struct:
+
 typedef struct {
     int codigo;
     char nome[50];
