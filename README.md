@@ -6,7 +6,7 @@ Bem-vindo! Este repositório contém um programa para cadastro de colaboradores,
 
 Este repositório foi criado com o intuito de compartilhar meu projeto, e também, para ajudar estudantes interessados pelo assunto.
 
-> ### Funcionalidades📃:
+> ### Funcionalidades:
 
 Uma empresa deseja fazer o cadastro dos colaboradores. Os dados que deverão ser persistidos (arquivo) são: código, nome, email e salário.
 
