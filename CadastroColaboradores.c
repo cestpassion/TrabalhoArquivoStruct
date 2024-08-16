@@ -12,20 +12,12 @@ O programa permite as seguintes funcionalidades:
 0) Sair
 */
 
-/*ERROS a serem consertados:
-
-- As vezes a função cadastrarColab não funciona quando preenchida com dados extremamente especificos
-- Na função removColab ao entrar no else, as strings nunca mais serão validas
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
 #define maxcolab 100
-
-//Struct:
 
 typedef struct {
     int codigo;
@@ -280,12 +272,12 @@ void removColab(int codigo) {
             printf("Voce tem certeza? (Digite 'sim' ou 'nao'): ");
             str(&confirmacao);
 
-            if((stricmp(confirmacao, "nao")) == 0){
+            if((stricmp(confirmacao, "nao\0")) == 0){
                 printf("\n");
                 pressioneparaVoltar();
                 return;
             }
-            else if((stricmp(confirmacao, "sim")) == 0){
+            else if((stricmp(confirmacao, "sim\0")) == 0){
                 for (int j = i; j < totalcolab - 1; j++) {
                     colab[j] = colab[j + 1];
                 }
@@ -300,11 +292,7 @@ void removColab(int codigo) {
             }
             else{
                 getchar();
-                printf("\nInvalido. Pressione 'Enter' e tente novamente.");
-                while(getchar() != '\n');
-                system("cls");
-
-                removColab(codigo);
+                printf("\nInvalido.\n");
                 pressioneparaVoltar();
                 return;
             }
@@ -347,7 +335,7 @@ void str(char **info){
     getchar();
     scanf("%[^\n]", buffer);
 
-    *info = (char*)malloc((strlen(buffer)) * sizeof(char));
+    *info = (char*)malloc((strlen(buffer) + 1) * sizeof(char));
 
     strcpy(*info, buffer);
 }
