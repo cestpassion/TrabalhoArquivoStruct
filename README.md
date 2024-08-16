@@ -20,9 +20,3 @@ O programa permite as seguintes funcionalidades:
 6) Mostrar soma dos salarios
 7) Mostrar todos os colaboradores
 0) Sair
-
-> ### Importante⚠️:
-
-O repositório ainda está em desenvolvimento!
-
-
