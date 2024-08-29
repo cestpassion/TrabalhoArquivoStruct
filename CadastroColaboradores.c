@@ -19,7 +19,7 @@ O programa permite as seguintes funcionalidades:
 
 #define maxcolab 100
 
-typedef struct {
+typedef struct Colaborador{
     int codigo;
     char nome[50];
     char email[50];
