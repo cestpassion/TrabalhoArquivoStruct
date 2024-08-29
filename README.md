@@ -14,9 +14,9 @@ O programa permite as seguintes funcionalidades:
 
 1) Cadastrar colaborador
 2) Consultar colaborador por nome
-3) Consultar colaborador por codigo
-4) Alterar salario
+3) Consultar colaborador por código
+4) Alterar salário
 5) Remover colaborador
-6) Mostrar soma dos salarios
+6) Mostrar soma dos salários
 7) Mostrar todos os colaboradores
 0) Sair
